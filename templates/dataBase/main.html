@@ -1,0 +1,24 @@
+
+
+
+{% extends 'base.html' %}
+{% block content %}
+
+<body>
+
+<form action ="" method="POST">
+   <center><h2>Create Unit</h2></center>
+   <hr>
+   <span>
+   {% csrf_token %}
+   {{form}}
+
+
+   <input type="submit" name="Submit" value="Create">
+</span>
+    
+</form>
+
+</body>
+
+{% endblock  %}

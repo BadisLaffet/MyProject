@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% block content %}
+
+
+<body>
+ 
+    <form action ="" method="POST">
+       <center><h2>Delete Unit</h2></center>
+       <hr>
+       <span>
+       {% csrf_token %}
+        
+				
+	<center>Please enter unit uuid : <br>
+        
+    </center>
+    <center><label for="delete">Unit uuid : </label> <input type="text" id="delete" ></center>
+       <center><input type="submit" name="Submit" value="Delete" ></center>
+    </span>
+        
+    </form>
+    
+    </body>
+
+
+
+
+
+
+
+
+
+
+
+{% endblock content %}
